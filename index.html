@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>가현이네 카페</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" integrity="sha384-QMQKDKDva0h3l4iNajqeov2YsNT3dwq/2U/LBHQqCBt2FqGPSxfNluz//ksyddpz" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" integrity="sha384-MCIglzER9NHMlnKEHDN5avpz0/hryuWTb7VIkF+cm9w5PbNRlPDbP0/S9wGWv57P" crossorigin="anonymous">
+  <meta name="description" content="가현이네 카페에서 다양한 음식과 여유를 즐겨보세요">
+  <!-- CSS -->
+  <style>
+    h2 { font-family: 'Varela Round', sans-serif; }
+    a { text-decoration: none }
+    img { max-width: 100% }
+
+  @font-face { /* Font 설정 */
+    font-family: 'Uiyeun';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105@1.1/Uiyeun.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face { /* Font 설정 */
+    font-family: 'establishRoomNo703OTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/establishRoomNo703OTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .home-content{
+    color: #fff;
+    text-align: center;
+    margin-top: 10;
+  }
+  .home-content p {
+    color: #fff;
+    font-family: 'Uiyeun';
+    font-size: 1.781rem;
+    margin: 10px 0 42px; /* 위 | 왼쪽 오른쪽 | 아래 */
+  }
+  .home-content a {
+    color: #fff;
+    font-family: 'Uiyeun';
+    font-size: 1.959rem;
+    margin: 10px 0 42px; /* 위 | 왼쪽 오른쪽 | 아래 */
+  }
+   .explain {
+     font-family: 'establishRoomNo703OTF';
+     font-size: 5rem;
+     font-weight: normal;
+   }
+   .button { /* button에 관한 설정 */
+     font-size: 1.375rem;
+     background: #0bd;
+     color: #fff;
+     border-radius: 5px;
+     padding: 18px 32px;
+   }
+   .button:hover{ 
+     background: #0090aa;
+   }
+  </style>
+  
+</head>
+<body>
+  <!--배경화면에 관한 코드-->
+  <style>
+    
+    #home { 
+      background-image: url(./images/coffee_BG.jpg);
+      min-height: 100vh;
+      background-size: cover;
+      background-position: bottom;
+    }
+  </style>
+  <div id="home" class="big-bg">
+
+  <style>
+    .logo{
+      width: 230px;
+      height: 150px;
+      margin-top: -15px;
+      margin-left: 5px;
+    }  
+    .page-header{
+      display: flex;
+      justify-content: space-between;
+    }
+    .main-nav{
+      display: flex;
+      font-size: 1.875em;
+      text-transform: uppercase;
+      margin-top: 34px;
+      list-style: none;
+    }
+    .main-nav li{
+      margin-right: 26px;
+    }
+    .main-nav a{
+      font-family: 'Uiyeun';
+      color: #fff;
+    }
+    .main-nav a:hover{
+      color: #0bc;
+    }
+  </style>
+    <!-- h1 태그 : 큰 제목, a 태그 : 링크, img 태그 : 이미지 -->
+    <header class="page-header">
+      <h1><a href="index.html"><img src="coffee_logo.png" alt="가현이네 카페 로고" class="logo"></a></h1>
+      <!-- h1>a>img.logo[src=images/mhalogo.png]를 하고 enter나 tab을 누르면 12번 줄 처럼 자동완성이 된다. -->
+      <nav> <!--공간 분할 태그-->
+        <ul class="main-nav"> <!-- nav>ul.main-nav를 하고 똑같이 특정 키를 누를 시 자동완성이 된다. -->
+        <li><a href="page1.html">가현이의 사업목록</a></li> <!-- li*n을 할 시 li코드가 n의 개수만큼 자동완성된다. -->
+        <li><a href="">음식 주문</a></li> <!--목록 태그-->
+        <li><a href="">직원 호출</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="home-content wrapper">
+      <h2 class="explain">Take a Good Rest</h2>
+      <p>편안한 카페에서 힐링시간을 가지며 맛있는 음식들을 먹어보세요</p>
+      <a href="menu.html" class="button">메뉴 보기</a>
+    </div>
+  </div>
+</body>
+</html>
